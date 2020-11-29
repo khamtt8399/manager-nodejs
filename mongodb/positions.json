@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "5fb221f266550c3ef2e7b228"
+  },
+  "machucvu": "GV",
+  "tenchucvu": "Giảng Viên"
+},{
+  "_id": {
+    "$oid": "5fb2220566550c3ef2e7b229"
+  },
+  "machucvu": "TK",
+  "tenchucvu": "Trưởng Khoa"
+},{
+  "_id": {
+    "$oid": "5fb2221866550c3ef2e7b22a"
+  },
+  "machucvu": "PK",
+  "tenchucvu": "Phó Khoa"
+}]

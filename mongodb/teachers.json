@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "5fa8b8e809243341add6dd95"
+  },
+  "macanbo": "GVCTT000",
+  "ho": "Nguyễn",
+  "ten": "Hoàng Nam",
+  "cmnd": "331854008",
+  "ngaysinh": "1999-01-08",
+  "gioitinh": "Nam",
+  "diachi": "Phường 2 - TP.Vĩnh Long - Vĩnh Long",
+  "sdt": "0781234568",
+  "email": "hoangnam89@gmai.com",
+  "chucvu": "Giảng Viên",
+  "hocvi": "Thạc Sĩ",
+  "khoa": "Công nghệ thông tin",
+  "chuyennganh": "Công nghệ phần mềm"
+},{
+  "_id": {
+    "$oid": "5fa8b94809243341add6dd96"
+  },
+  "macanbo": "GVCTT001",
+  "ho": "Phạm",
+  "ten": "Hoàng Nam",
+  "cmnd": "331675808",
+  "ngaysinh": "1999-03-08",
+  "gioitinh": "Nam",
+  "diachi": "Phường 8 - TP.Vĩnh Long - Vĩnh Long",
+  "sdt": "0783456788",
+  "email": "hoangnampham89@gmai.com",
+  "chucvu": "Giảng Viên",
+  "hocvi": "Thạc Sĩ",
+  "khoa": "Công nghệ thông tin",
+  "chuyennganh": "Mạng máy tính"
+},{
+  "_id": {
+    "$oid": "5fb3771f52c95d5006703e06"
+  },
+  "macanbo": "GVCTT002",
+  "ho": "Trịnh",
+  "ten": "Tường Khâm",
+  "cmnd": "13123213",
+  "ngaysinh": "2020-05-12",
+  "gioitinh": "Nam",
+  "diachi": "Vĩnh Long",
+  "sdt": "0776688934",
+  "email": "khamtt8399@gmail.com",
+  "chucvu": "Trưởng Khoa",
+  "hocvi": "Tiến Sĩ",
+  "khoa": "Công nghệ thông tin",
+  "chuyennganh": "Công nghệ phần mềm"
+}]

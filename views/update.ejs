@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- CSS hover card-->
+  <link rel="stylesheet" href="../public/stylesheets/style.css">
+  <!-- CSS of Bootstrap -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> <%= title %> </title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Nav -->
+    <%- include('./template/header.ejs') %>
+    <!-- End Nav -->
+    <!-- Start Content -->
+    <div class="container mt-4">
+      <hr data-content="<%= tieude %>" class="hr-text">
+      <form action="/update/<%= giangvien.id %> " method="POST" style="margin-top: 5rem;">
+        <div class="form-row">
+          <div class="form-group col-md-6 col-sm-12">
+            <label>Họ</label>
+            <input value="<%= giangvien.ho %>" type="text" class="form-control" name="ho" id="ho">
+          </div>
+          <div class="form-group col-md-6 col-sm-12">
+            <label>Tên</label>
+            <input value="<%= giangvien.ten %>" type="text" class="form-control" name="ten" id="ten">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-5 col-sm-12">
+            <label>CMND</label>
+            <input value="<%= giangvien.cmnd %>" class="form-control" name="cmnd" id="cmnd">
+          </div>
+          <div class="form-group col-md-5 col-sm-12">
+            <label>Ngày sinh</label>
+            <input value="<%= giangvien.ngaysinh %>" type="date" class="form-control" name="ngaysinh" id="ngaysinh">
+          </div>
+          <div class="form-group col-md-2 col-sm-12">
+            <label for="inputState">Giới tính</label>
+            <select name="gioitinh" id="inputState" class="form-control">
+              <% if(giangvien.gioitinh === "Nam"){ %>
+              <option selected>Nam</option>
+              <option>Nữ</option>
+              <%} else { %>
+              <option selected>Nữ</option>
+              <option>Nam</option>
+              <%} %>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Địa chỉ</label>
+          <input value="<%= giangvien.diachi %>" type="text" class="form-control" name="diachi" id="inputAddress"
+            placeholder="C69, đường Đinh Tiên Hoàng, Khóm 5, Phường 8, TP. Vĩnh Long, Tỉnh Vĩnh Long">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Số điện thoại</label>
+            <input value="<%= giangvien.sdt %>" class="form-control" name="sdt" id="sdt">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputCity">Email</label>
+            <input value="<%= giangvien.email %>" class="form-control" name="email" id="email">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputState">Chức vụ</label>
+            <select name="chucvu" id="inputState" class="form-control">
+              <option selected><%= giangvien.chucvu %> </option>
+              <% chucvu.forEach(function(i) { %>
+              <% if (i.tenchucvu !== giangvien.chucvu) { %>
+              <option><%= i.tenchucvu %> </option>
+              <%} %>
+              <%}) %>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputState">Học vị</label>
+            <select name="hocvi" id="inputState" class="form-control">
+              <option selected><%= giangvien.hocvi %> </option>
+              <% hocvi.forEach(function(i) { %>
+              <% if (i.tenhocvi !== giangvien.hocvi) { %>
+              <option><%= i.tenhocvi %> </option>
+              <%} %>
+              <%}) %>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputState">Khoa</label>
+            <select name="khoa" id="inputState" class="form-control">
+              <option selected><%= giangvien.khoa %> </option>
+              <% khoa.forEach(function(i) { %>
+              <% if (i.tenkhoa !== giangvien.khoa) { %>
+              <option><%= i.tenkhoa %> </option>
+              <%} %>
+              <%}) %>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputState">Chuyên ngành</label>
+            <select name="chuyennganh" id="inputState" class="form-control">
+              <option selected><%= giangvien.chuyennganh %> </option>
+              <% chuyennganh.forEach(function(i) { %>
+              <% if (i.tenchuyennganh !== giangvien.chuyennganh) { %>
+              <option><%= i.tenchuyennganh%> </option>
+              <%} %>
+              <%}) %>
+            </select>
+          </div>
+        </div>
+        <button style="width: 100%; font-weight: bold; margin-top: 1rem; padding: 1rem;" type="submit"
+          class="btn btn-primary">Cập nhật thông tin</button>
+      </form>
+    </div>
+    <!-- End Content -->
+    <!-- Start Footer -->
+    <%- include('./template/footer.ejs'); %>
+    <!-- End Footer -->
+    <!-- Script of Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <script src="../public/javascripts/jquery.validate.js"></script>
+    <script src="../public/javascripts/script.js"></script>
+</body >
+</html >
