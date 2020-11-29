@@ -5,6 +5,7 @@ var chucvuModel = require("../model/positions");
 var chuyennganhModel = require("../model/specialitys");
 var hocvi = require("../model/academics");
 var khoa = require("../model/units");
+var func = require('../functions/string');
 // Tai du lieu can thiet
 router.get("/", function (req, res, next) {
   chucvuModel.find({}, function (err, result) {
@@ -46,18 +47,18 @@ router.get("/add", function (req, res, next) {
 // Them thong tin giang vien vao MongoDB
 router.post("/add", function (req, res, next) {
     var data = {
-      'ho': req.body.ho,
-      'ten': req.body.ten,
-      'cmnd': req.body.cmnd,
-      'ngaysinh': req.body.ngaysinh,
-      'gioitinh': req.body.gioitinh,
-      'diachi': req.body.diachi,
-      'sdt': req.body.sdt,
-      'email': req.body.email,
-      'chucvu': req.body.chucvu,
-      'hocvi': req.body.hocvi,
-      'khoa': req.body.khoa,
-      'chuyennganh': req.body.chuyennganh,
+      'ho': func.trim(req.body.ho),
+      'ten': func.trim(req.body.ten),
+      'cmnd': func.trim(req.body.cmnd),
+      'ngaysinh': func.trim(req.body.ngaysinh),
+      'gioitinh': func.trim(req.body.gioitinh),
+      'diachi': func.trim(req.body.diachi),
+      'sdt': func.trim(req.body.sdt),
+      'email': func.trim(req.body.email),
+      'chucvu': func.trim(req.body.chucvu),
+      'hocvi': func.trim(req.body.hocvi),
+      'khoa': func.trim(req.body.khoa),
+      'chuyennganh': func.trim(req.body.chuyennganh),
     };
     var addTeacher = new teacherModel(data);
     addTeacher.save();
@@ -86,18 +87,18 @@ router.get("/update/:id", function (req, res, next) {
 // Cap nhat thong tin giang vien vao MongoDB
 router.post("/update/:id", function (req, res, next) {
   var data = {
-    'ho': req.body.ho,
-    'ten': req.body.ten,
-    'cmnd': req.body.cmnd,
-    'ngaysinh': req.body.ngaysinh,
-    'gioitinh': req.body.gioitinh,
-    'diachi': req.body.diachi,
-    'sdt': req.body.sdt,
-    'email': req.body.email,
-    'chucvu': req.body.chucvu,
-    'hocvi': req.body.hocvi,
-    'khoa': req.body.khoa,
-    'chuyennganh': req.body.chuyennganh,
+    'ho': func.trim(req.body.ho),
+    'ten': func.trim(req.body.ten),
+    'cmnd': func.trim(req.body.cmnd),
+    'ngaysinh': func.trim(req.body.ngaysinh),
+    'gioitinh': func.trim(req.body.gioitinh),
+    'diachi': func.trim(req.body.diachi),
+    'sdt': func.trim(req.body.sdt),
+    'email': func.trim(req.body.email),
+    'chucvu': func.trim(req.body.chucvu),
+    'hocvi': func.trim(req.body.hocvi),
+    'khoa': func.trim(req.body.khoa),
+    'chuyennganh': func.trim(req.body.chuyennganh),
   };
   var id = req.params.id;
   teacherModel.findByIdAndUpdate(id, data, function (err, result) { 
