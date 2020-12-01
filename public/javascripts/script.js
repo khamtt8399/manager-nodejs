@@ -21,7 +21,7 @@ function comfirmDelete(msg) {
 
 // Rang buoc du lieu nhap vao
 $(document).ready(function () {
-  $('form[id="addForm"]').validate({
+  $('form[id="inputForm"]').validate({
     onfocusout: false,
     onkeyup: false,
     onclick: false,

@@ -22,7 +22,7 @@
     <!-- Start Content -->
     <div class="container mt-4">
       <hr data-content="<%= tieude %>" class="hr-text">
-      <form action="/update/<%= giangvien.id %> " method="POST" style="margin-top: 5rem;">
+      <form action="/update/<%= giangvien.id %> " method="POST" style="margin-top: 5rem;" name="inputForm" id="inputForm">
         <div class="form-row">
           <div class="form-group col-md-6 col-sm-12">
             <label>Họ</label>
@@ -57,7 +57,7 @@
         </div>
         <div class="form-group">
           <label for="inputAddress">Địa chỉ</label>
-          <input value="<%= giangvien.diachi %>" type="text" class="form-control" name="diachi" id="inputAddress"
+          <input value="<%= giangvien.diachi %>" type="text" class="form-control" name="diachi" id="diachi"
             placeholder="C69, đường Đinh Tiên Hoàng, Khóm 5, Phường 8, TP. Vĩnh Long, Tỉnh Vĩnh Long">
         </div>
         <div class="form-row">

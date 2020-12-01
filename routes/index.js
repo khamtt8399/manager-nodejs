@@ -87,8 +87,8 @@ router.get("/update/:id", function (req, res, next) {
 // Cap nhat thong tin giang vien vao MongoDB
 router.post("/update/:id", function (req, res, next) {
   var data = {
-    'ho': func.trim(req.body.ho),
-    'ten': func.trim(req.body.ten),
+    'ho': func.convert(req.body.ho),
+    'ten': func.convert(req.body.ten),
     'cmnd': func.trim(req.body.cmnd),
     'ngaysinh': func.trim(req.body.ngaysinh),
     'gioitinh': func.trim(req.body.gioitinh),

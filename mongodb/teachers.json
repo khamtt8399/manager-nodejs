@@ -1,0 +1,113 @@
+[{
+  "_id": {
+    "$oid": "5fbb3080f83c2a14056250a7"
+  },
+  "ho": "Nguyễn Thành",
+  "ten": "Đông",
+  "cmnd": "331858567",
+  "ngaysinh": "1997-12-31",
+  "gioitinh": "Nam",
+  "diachi": "Vĩnh Long",
+  "sdt": "0776688934",
+  "email": "dongnt@gmail.com",
+  "chucvu": "Giảng Viên",
+  "hocvi": "Thạc Sĩ",
+  "khoa": "Công nghệ thông tin",
+  "chuyennganh": "Công nghệ phần mềm"
+},{
+  "_id": {
+    "$oid": "5fc30ea5d126af26a6c12dd6"
+  },
+  "ho": "Trịnh Tường",
+  "ten": "Khâm",
+  "cmnd": "331858506",
+  "ngaysinh": "1997-04-09",
+  "gioitinh": "Nam",
+  "diachi": "Vĩnh Long",
+  "sdt": "0776688934",
+  "email": "khamtt8399@gmail.com",
+  "chucvu": "Giảng Viên",
+  "hocvi": "Thạc Sĩ",
+  "khoa": "Công nghệ thông tin",
+  "chuyennganh": "Công nghệ phần mềm"
+},{
+  "_id": {
+    "$oid": "5fc30f6deb1176299340d9ce"
+  },
+  "ho": "Nguyễn",
+  "ten": "Du",
+  "cmnd": "331867768",
+  "ngaysinh": "1997-07-09",
+  "gioitinh": "Nam",
+  "diachi": "Vĩnh Long",
+  "sdt": "0987654321",
+  "email": "nguyendu@gmail.com",
+  "chucvu": "Giảng Viên",
+  "hocvi": "Thạc Sĩ",
+  "khoa": "Công nghệ thông tin",
+  "chuyennganh": "Công nghệ phần mềm"
+},{
+  "_id": {
+    "$oid": "5fc34de294825b4695de9a4e"
+  },
+  "ho": "Quách",
+  "ten": "Tĩnh",
+  "cmnd": "331567843",
+  "ngaysinh": "1997-01-16",
+  "gioitinh": "Nam",
+  "diachi": "Vĩnh Long",
+  "sdt": "0978685647",
+  "email": "tinhcaca@gmail.com",
+  "chucvu": "Giảng Viên",
+  "hocvi": "Tiến Sĩ",
+  "khoa": "Công nghệ thông tin",
+  "chuyennganh": "Mạng máy tính"
+},{
+  "_id": {
+    "$oid": "5fc3b9a052ab8d63c61858c6"
+  },
+  "ho": "Hoàng",
+  "ten": "Dung",
+  "cmnd": "331567849",
+  "ngaysinh": "1997-08-13",
+  "gioitinh": "Nữ",
+  "diachi": "An Giang",
+  "sdt": "0987678789",
+  "email": "dungmuimui@gmail.com",
+  "chucvu": "Giảng Viên",
+  "hocvi": "Thạc Sĩ",
+  "khoa": "Công nghệ thông tin",
+  "chuyennganh": "Công nghệ phần mềm"
+},{
+  "_id": {
+    "$oid": "5fc3bd3bbacbd569d70d6fce"
+  },
+  "ho": "Kim",
+  "ten": "Dung",
+  "cmnd": "331567439",
+  "ngaysinh": "1997-09-18",
+  "gioitinh": "Nữ",
+  "diachi": "Bình Dương",
+  "sdt": "0776987654",
+  "email": "dungkim@gmail.com",
+  "chucvu": "Giảng Viên",
+  "hocvi": "Thạc Sĩ",
+  "khoa": "Công nghệ thông tin",
+  "chuyennganh": "Công nghệ phần mềm"
+},{
+  "_id": {
+    "$oid": "5fc45cec7b1c2a0e7b1a8526"
+  },
+  "ho": "Nguyễn Hoàng",
+  "ten": "Lên",
+  "cmnd": "331858963",
+  "ngaysinh": "1997-06-17",
+  "gioitinh": "Nam",
+  "diachi": "Vĩnh Long",
+  "sdt": "0778634010",
+  "email": "hoanglen@gmail.com",
+  "chucvu": "Giảng Viên",
+  "hocvi": "Thạc Sĩ",
+  "khoa": "Công nghệ thông tin",
+  "chuyennganh": "Mạng máy tính"
+}]
