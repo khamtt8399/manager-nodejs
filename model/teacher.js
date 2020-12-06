@@ -1,4 +1,6 @@
+// Require thu vien
 const mongoose = require('mongoose');
+// Tao Schema
 const teacher = new mongoose.Schema(
     {
         ho: 'String',
@@ -15,4 +17,5 @@ const teacher = new mongoose.Schema(
         chuyennganh: 'String'
     }, { versionKey: null }
 )
+// 
 module.exports = mongoose.model('teachers', teacher);

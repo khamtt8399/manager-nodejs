@@ -47,8 +47,8 @@ router.get("/add", function (req, res, next) {
 // Them thong tin giang vien vao MongoDB
 router.post("/add", function (req, res, next) {
     var data = {
-      'ho': func.trim(req.body.ho),
-      'ten': func.trim(req.body.ten),
+      'ho': func.convert(req.body.ho),
+      'ten': func.convert(req.body.ten),
       'cmnd': func.trim(req.body.cmnd),
       'ngaysinh': func.trim(req.body.ngaysinh),
       'gioitinh': func.trim(req.body.gioitinh),
